@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
+  experimental: { esmExternals: "loose" },
+  // In order to address the issue here: https://github.com/vitest-dev/vitest/issues/4288
   images: {
     domains: [
       "avatars.githubusercontent.com",
